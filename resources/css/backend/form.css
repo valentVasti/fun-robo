@@ -1,0 +1,171 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form div input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+form div label {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+form div select {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+p span{
+    display: relative;
+    font-size:smaller;
+    background-color: var(--secondary-red-bg);
+    padding: 5px;
+    padding-inline: 10px;
+    border-radius: 999px;
+    margin-right: 3px;
+}
+
+p span i{
+    display: absolute;
+    color:rgb(196, 196, 196);
+    right: 0;
+}
+
+p span i:hover{
+    display: absolute;
+    color:rgb(255, 36, 36);
+    right: 0;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn-group button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.btn-group #submit-btn {
+    background-color: var(--secondary-green100);
+}
+
+.btn-group #submit-btn:hover {
+    background-color: var(--secondary-green200);
+}
+
+.error-message {
+    color: red;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="file"] + .custom-text {
+    display: none;
+}
+
+.upload-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(144, 201, 255);
+    width: fit-content;
+    font-size: 14px;
+}
+
+.file-name-display {
+    font-size: 14px;
+    color: #888;
+}
+
+.file-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.preview-img {
+    width: 300px;
+    max-height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.preview-container p {
+    font-size: small;
+    padding: 2px;
+}
+
+.new-img-text {
+    color: rgb(0, 121, 0);
+    width: fit-content;
+}
+
+.ex-img-text {
+    color: rgb(193, 0, 0);
+    width: fit-content;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.radio-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex-form div {
+    width: 100%;
+}
+
+template#embed-maps-info-modal{
+    text-align: left;
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,249 @@
+.article-detail{
+    margin: 7rem 3rem 3rem;
+    max-width: 100%;
+    display: flex;
+    gap: 1rem;
+    will-change: transform;
+    position: relative;
+    overflow: visible !important;
+}
+
+article{
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+figure figcaption{
+    padding-bottom: 1rem;
+}
+
+article p{
+    width: 90%;    
+}
+
+article .title p:first-of-type{
+    padding-bottom: 5px;
+}
+
+article h3{
+    font-size: 1.8rem;
+    margin-block-end: 0.5rem;
+}
+
+.title h4{
+    color: var(--primary-red);
+    font-size: 1.2rem;
+    margin-block-end: 1rem;
+}
+
+.datetime {
+    color: gray !important;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-block-end: 0.5rem;
+}
+
+.datetime p {
+    width: fit-content;
+}
+
+figure img{
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    margin-block-end: 0.5rem;
+    border-radius: 10px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+}
+
+figure figcaption{
+    color: rgb(97, 97, 97);
+    font-style: italic;
+    font-size: 0.9rem;
+    width: 90%;
+    display: flex;
+}
+
+.popular-article-div{
+    width: 30vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 2.5px solid var(--primary-green);
+    gap: 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3rem;
+    margin-block-start: 2.5rem;
+}
+
+.popular-article-div::before{
+    content: attr(data-content-before);
+    display: inline;
+    position: absolute;
+    top: -40;
+    left: 1rem;
+    font-size: 1rem;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-white);
+    background-color: var(--primary-green);
+    border-radius: 20px 20px 0 0;
+}
+
+.popular-article-container{
+    max-width: 100%;
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.popular-article-container .unique-button{
+    margin-block: 0;
+}
+
+.popular-article-container a{
+    display: flex;
+    gap: 1rem;
+    text-decoration: none !important;
+    height: 100px;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.popular-article-container a:hover{
+    transform: scale(1.02);
+}
+
+
+.popular-img-div{
+    width: 40%;
+    max-height: 100%;
+}
+
+.popular-img-div img{
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.popular-desc-div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.popular-desc-div h3{
+    font-size: 0.8rem !important;
+    width: 100%;
+    color: var(--color-text-black);
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.popular-article-container a{
+    width: 100% !important;
+}
+
+.popular-desc-div p{
+    font-size: 0.7rem !important;
+}
+
+
+@media screen and (max-width: 1050px){
+    .title h3{
+        font-size: 1.5rem;
+    }
+    .title h4{
+        font-size: 1rem;
+    }
+
+    article p{
+        width: 100%;    
+    }
+
+    article{
+        width: 60vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .popular-article-div {
+        width: 40vw;
+    }
+
+    figure img{
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    figure img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .article-detail{
+        flex-direction: column;
+    }
+
+    article{
+        width: 100%;
+    }
+
+    .popular-article-div{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 750px){
+    figure img{
+        width: 100%;
+    }
+
+    .datetime{
+        flex-direction: column;
+    }
+
+    .title h3{
+        font-size: 1.3rem;
+        word-spacing: -3px;
+    }
+
+    .title h4{
+        font-size: 0.9rem;
+    }
+
+    .popular-article-div {
+        width: 100%;
+        margin-block: 1.5rem;
+    }
+}

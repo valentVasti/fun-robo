@@ -1,0 +1,231 @@
+.contact{
+    margin: 7rem 2rem 3.5rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-wrapper{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-block: 2rem;
+}
+
+.media-wrapper{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.media-wrapper i{
+    font-size: 3rem;
+    color: var(--color-text-black);
+    margin: 1rem;
+}
+
+.media-wrapper h2{
+    font-size: 1rem;
+}
+
+.whatsapp, .whatsapp i{
+    color: green;
+}
+
+.whatsapp:hover{
+    background-color: lightgreen;
+}
+
+.instagram, .instagram i {
+    color: #7c0e33;
+}
+
+.instagram:hover{
+    background-color: #f3b5ca;
+}
+
+.facebook, .facebook i{
+    color: darkblue;
+}
+
+.facebook:hover{
+    background-color: lightblue;
+}
+
+.branch-wrapper{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    margin-block: 2rem 1rem;
+    
+}
+
+.branch{
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem ;
+    height: auto;
+    border: 2px solid var(--primary-red);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.googlemaps{
+    width:100%; 
+    height:300px; 
+    overflow:hidden;
+    border-radius: 20px;
+    margin-block-end: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.branch h3{
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 5px;
+}
+.branch .branch-name{
+    font-size: 1rem !important;
+    border-radius: 0 0 30px 30px;
+    padding: 0.5rem;
+    background-color: var(--primary-red);
+    color: var(--color-text-white);
+    margin: 0 1rem;
+    width: 50%;
+}
+
+.branch-wrapper img{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.branch-socmed{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.branch-socmed a{ 
+    padding-inline: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s ease;
+}
+
+.branch-socmed a:nth-child(1) {
+    color: green;
+}
+
+.branch-socmed a:nth-child(2) {
+    color: #7c0e33;
+}
+
+.branch-socmed a:nth-child(3) {
+    color: darkblue;
+}
+
+.branch-socmed a:nth-child(1):hover {
+    background-color: lightgreen;
+}
+
+.branch-socmed a:nth-child(2):hover {
+    background-color: #f3b5ca;
+}
+
+.branch-socmed a:nth-child(3):hover {
+    background-color: lightblue;
+}
+
+.description{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-block-start: 1rem;
+}
+
+.red-caption{
+    border-radius: 0 0 50px 50px;
+    padding: 0 ;
+    margin-block-end: 1rem;
+    color: var(--color-text-black);
+    background-color: white;
+    width: 100%;
+}
+
+@media screen and (max-width: 750px){
+    .description{
+        flex-direction: column;
+    }
+    
+    .branch-wrapper img{
+        width:100%;
+    }
+    
+    .branch-wrapper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .branch{
+        max-width: 100%;
+    }
+
+    .branch-name{
+        width: 100% !important;
+    }
+
+    .red-caption {
+        padding-inline: 0 !important;
+    }
+    .branch-wrapper{
+        width: 100%;
+        margin-inline: 0 !important;
+    }
+
+    .branch h3{
+        font-size: 0.8rem !important;
+        width: 100%;
+    }
+
+    .red-caption,
+    .green-caption{
+        padding:0 0.5rem 0.5rem;
+    }
+}

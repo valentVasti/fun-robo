@@ -1,0 +1,27 @@
+:root {
+    /* primary */
+    --primary-red: rgb(255, 0, 90);
+    --primary-green: rgb(60, 160, 140);
+
+    /* secondary */
+    --secondary-red300: rgb(220, 0, 0);
+    --secondary-red200: rgb(245, 0, 60);
+    --secondary-red100: rgb(255, 60, 120);
+    --secondary-pink: rgb(230, 60, 130);
+    --secondary-green200: rgb(0, 130, 130);
+    --secondary-green100: rgb(120, 190, 170);
+    --secondary-blue: rgb(0, 140, 170);
+
+    /* main-bg */
+    --main-bg: rgb(255, 255, 255);
+
+    /* secondary-bg */
+    --secondary-red-bg: rgb(255, 235, 235);
+    --secondary-purple-bg: rgb(250, 240, 250);
+    --secondary-green-bg: rgb(235, 250, 240);
+    --secondary-blue-bg: rgb(225, 255, 255);
+
+    /* color-text */
+    --color-text-black: #070707;
+    --color-text-white: #f7f7f7;
+}

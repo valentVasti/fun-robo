@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production webpack --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "cross-env": "^10.0.0",
+        "laravel-mix": "^6.0.49",
+        "postcss-custom-properties": "^13.3.3",
+        "webpack": "^5.101.3",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "datatables.net-dt": "^1.13.7",
+        "sweetalert2": "^11.6.13",
+        "typed.js": "^2.1.0"
+    }
+}
