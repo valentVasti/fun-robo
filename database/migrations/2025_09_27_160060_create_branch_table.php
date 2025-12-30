@@ -24,7 +24,7 @@ return new class extends Migration
 			$table->string('link_instagram')->nullable();
 			$table->string('facebook')->nullable();
 			$table->string('link_facebook')->nullable();
-			$table->string('link_gmaps')->nullable();
+			$table->longText('link_gmaps')->nullable();
 			$table->string('email')->nullable();
 			$table->timestamps();
 		});
